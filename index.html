@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enpictana Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2736ea7468.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <a class="navbar-brand fw-bold" href="#">R.L.E</a>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Full Stack Web Developer</p>
+            <h1>Hi, I'm <span>Russel Lance</span> <br>Enpictana.
+            </h1>
+        </div>
+    </div>
+</div>
+<!-- -------------About----------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/pfp.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm Russel Lance Enpictana, an electronics engineering graduate from the Polytechnic University of the Philippines. With a degree in Electronics Engineering, I've decided to pursue my passion for web development. I'm eager to become a professional web developer, so I'm diving into related studies to expand my skills. My goal is to create engaging and user-friendly websites that makes a positive impact.
+                </p>
+
+                <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('project')">Project Experience</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Front End Web Development</span>
+                        <br> HTML5, CSS3, Bootstrap, Wireframes and Mockups, Git and GitHub
+                        </li>
+                        <li><span>Back End Web Development</span>
+                            <br> JavaScript, Node.js, Express.js, MongoDB, 
+                            Postman, REST API, Java, and SpringBoot
+                        </li>
+                        <li><span>Full Stack Web Development</span>
+                                <br>  React.js, JS DOM Manipulation, API 
+                                Integration with Fetch, SDLC and Trello
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>STUDENT INTERN</span>
+                        <br> Melham Contruction Corporation
+                        <br> AUG 2022 &#8208 SEP 2022
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>ZUITT WEB DEVELOPER PROGRAM</span>
+                        <br> MAIN COURSE PACKAGE (MERN) - FULL STACK WEB DEVELOPMENT
+                        <br> (MARCH 2024 &#8208 MAY 2024)
+                        </li>
+                        <li><span>BS IN ELECTRONICS ENGINEERING</span>
+                            <br> POLYTECHNIC UNIVERSITY OF THE PHILIPPINES
+                            <br> (2019 &#8208 2023)
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="project">
+                    <ul>
+                        <li><span>Front-end Capstone</span>
+                        <br> Responsive Portfolio Website: Designed and developed a static, responsive portfolio using HTML5, CSS3, and Bootstrap. Utilized Git for version control and hosted the site on GitHub.
+                        </li>
+                        <li><span>Back-end Capstone</span>
+                        <br> E-commerce API Suite: Created a comprehensive suite of RESTful e&#8208commerce APIs, implementing secure authentication and data management practices.
+                        </li>
+                        <li><span>Full-Stack Capstone</span>
+                        <br>  React Web Application: Developed full-stack web application with React, integrating APIs for dynamic data handling and ensuring responsive design with modern JavaScript techniques
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -------------Services------------ -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Create stunning, responsive websites that captivate your audience and enhance user experience.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-node-js"></i>
+                <h2>E-Commerce API</h2>
+                <p>Develop robust and scalable APIs to power your e-commerce applications with ease.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-cash-register"></i>
+                <h2>E-Commerce Website</h2>
+                <p>Build a comprehensive e-commerce platform to boost your online sales and customer engagement.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------------Portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/picka.png">
+                <div class="layer">
+                    <h3>E-Commerce Website - PICK-A</h3>
+                    <p>This is an example of an e-commerce website which can be access by all devices.</p>
+                    <a href="http://zuitt-bootcamp-prod-402-7113-enpictana.s3-website.us-east-1.amazonaws.com/"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>E-Commerce API</h3>
+                    <p>This e-commerce API handles all the essential functionalities for managing products, processing orders, and facilitating transactions seamlessly.</p>
+                    <a href="http://ec2-3-135-239-184.us-east-2.compute.amazonaws.com"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#portfolio" class="btn">See More</a>
+    </div>
+</div>
+<!-- ----------------Portfolio------------ -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>enpictanalance2001@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>09777733723</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/rssllnc.enpictana.3625/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://x.com/LanceEnpictana5"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/rssllnc_05/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/russel-lance-enpictana-3b2162244/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/Enpictana_Resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Email" placeholder="Your Email" required>
+                    <textarea name="Your Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2024 | PORTFOLIO | All rights reserved.</p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right="0";
+    }
+    function closemenu(){
+        sidemeu.style.right="-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbylDYbofNV_o9qYiFtxbNUTIGUf9ExSgIwFx249x2Ou4WfAkq0Xu2ovuS2TvXZd56YkmA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+</body>
+</html>
